@@ -1,4 +1,4 @@
-## This is Replica of Acharya Prashant orgnisation website vedio serires page
+## This is Replica of Acharya Prashant orgnisation website video serires page
 To run this project steps are below
 
 1. clone this repo in vs code terminal -> cmd->  git clone <repolink>
