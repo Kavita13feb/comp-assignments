@@ -12,14 +12,11 @@ To run this project, follow these steps:
    ```
    cd ap-task
 3. **Install npm modules:**
- ```
-   npm install
-
-4. **Install npm modules:**
- ```
-  npm start
-
-
+   ```
+   npm instal
+4. **Start the project locally::**
+   ```
+   npm start
 
 ## Component Structure 
 
