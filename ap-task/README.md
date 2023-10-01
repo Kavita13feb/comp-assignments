@@ -10,7 +10,7 @@ To run this project, follow these steps:
 
 2. **Navigate to the project's root directory:**
    ```
-   cd ap-task
+   cd comp-assignments/ap-task
 3. **Install npm modules:**
    ```
    npm install
