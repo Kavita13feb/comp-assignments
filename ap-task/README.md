@@ -1,4 +1,4 @@
-### This is Replica of Acharya Prashant orgnisation website video serires page
+### This is The Replica of Acharya Prashant orgnisation website's video serires page
 ## Getting Started
 
 To run this project, follow these steps:
