@@ -13,12 +13,14 @@ export const Navbar=()=> {
   const [showDrowpdown1, setDrowpdown1] = useState(false);
   const [showDrowpdown, setDrowpdown] = useState(
     [
-      "Business Setup",
-      "Tax & Compliance",
-      "Trademark & IP",
-      "Documentation",
-      "Others",
-      "More",
+      "Home",
+      "Live Sessions",
+      "Vedio Series",
+      "Ap Books",
+      "Ap Articles",
+      "Invite",
+      "In Media",
+      "Donate",
     ].map(() => false)
   );
 
@@ -59,18 +61,22 @@ export const Navbar=()=> {
               key={i}
             >
               {el.title}
-              {showDrowpdown[i] ? (
-                <>
-                  <HiOutlineChevronUp />
 
-                </>
-              ) : (
-                <HiOutlineChevronDown />
-              )}
+              {
+                el.title=="Live Sessions"||el.title=="Invite"? ( showDrowpdown[i] ? (
+                  <>
+                    <HiOutlineChevronUp />
+  
+                  </>
+                ) : (
+                  <HiOutlineChevronDown />
+                )):null
+              }
+             
             </p>
 
           {
-            showDrowpdown[i]&&<DropDownUi menu={el.menu} />
+            showDrowpdown[i]&&<DropDownUi menu={el.menu?el.menu:[]} />
           }  
 
             </div>

@@ -40,9 +40,10 @@ useEffect(()=>{
        <button>Click here</button>
       </div>
         <SearchBar/>
-        <p style={{display:"flex"}}>filter details</p>
+        {/* <p style={{display:"flex"}}>filter details</p> */}
         <SeriesDetails CourseDetails={CourseDetails}/>
         <Courses courses={courses}/>
+        <div style={{marginTop:"5%"}}></div>
         <RelatedContents relatedContents={relatedContents}/>
     </div>
   )
