@@ -1,10 +1,24 @@
-## This is Replica of Acharya Prashant orgnisation website video serires page
-To run this project steps are below
+### This is Replica of Acharya Prashant orgnisation website video serires page
+## Getting Started
 
-1. clone this repo in vs code terminal -> cmd->  git clone <repolink>
-3. navigate to  ap-task root diractory
-2. install npm modules -> cmd -> npm install
-3. start project locally ->cmd -> npm start
+To run this project, follow these steps:
+
+1. **Clone this repo in your VS Code terminal:**
+
+   ```shell
+   git clone <repository_url>
+
+2. **Navigate to the project's root directory:**
+   ```
+   cd ap-task
+3. **Install npm modules:**
+ ```
+   npm install
+
+4. **Install npm modules:**
+ ```
+  npm start
+
 
 
 ## Component Structure 
