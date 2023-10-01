@@ -6,7 +6,7 @@ To run this project, follow these steps:
 1. **Clone this repo in your VS Code terminal:**
 
    ```shell
-   git clone (https://github.com/Kavita13feb/comp-assignments.git)
+   git clone https://github.com/Kavita13feb/comp-assignments.git
 
 2. **Navigate to the project's root directory:**
    ```
