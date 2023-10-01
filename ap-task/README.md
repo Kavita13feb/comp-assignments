@@ -5,3 +5,13 @@ To run this project steps are below
 3. navigate to  ap-task root diractory
 2. install npm modules -> cmd -> npm install
 3. start project locally ->cmd -> npm start
+
+
+## Component Structure 
+-App.js (root)
+  -VideoSeries
+      - Navbar
+      - searchbar
+      - SeriesDetails
+      - Courses
+      - RelatedContents
