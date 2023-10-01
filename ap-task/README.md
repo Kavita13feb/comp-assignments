@@ -13,7 +13,7 @@ To run this project, follow these steps:
    cd ap-task
 3. **Install npm modules:**
    ```
-   npm instal
+   npm install
 4. **Start the project locally::**
    ```
    npm start
