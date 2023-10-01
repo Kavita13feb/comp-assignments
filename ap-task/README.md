@@ -8,8 +8,8 @@ To run this project steps are below
 
 
 ## Component Structure 
--App.js (root)
-  -VideoSeries
+# App.js (root)
+  # VideoSeries
       - Navbar
       - searchbar
       - SeriesDetails
