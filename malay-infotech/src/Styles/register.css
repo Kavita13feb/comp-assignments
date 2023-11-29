@@ -1,7 +1,38 @@
 .registerForm{
-    width:50%;
+width:80%;
+
     margin:auto;
     display: flex;
     flex-direction: column;
+    gap:10px;
+  
+}
+
+.section{
+width:50%;
+background-color: rgb(133, 133, 235);
+
+margin: auto;
+padding: 20px;
+    
+
+}
+
+.wrapper{
+    display: flex;
+gap:1%;
+}
+.wrapper>input{
+width:50%;
+}
+body{
+    background-color: rgb(166, 166, 243);
+
+}
+
+input{
+   padding: 10px;
+   border:none;
+   border-radius: 5px;
 
 }

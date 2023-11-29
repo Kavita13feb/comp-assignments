@@ -1,9 +1,11 @@
 import React from 'react'
+import "../Styles/register.css" 
 
 export const Dashboard = () => {
   return (
-    <div>
-        <h3>MemberName:</h3>
+    <div className='register'>
+        <h1>Dashboard</h1>
+        <h3 >MemberName:</h3>
          <p>MemberAddress:</p>
          <p>MemberCityName:</p>
          <p>MemberPINCode:</p>
