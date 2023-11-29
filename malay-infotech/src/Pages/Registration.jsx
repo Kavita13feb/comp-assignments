@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../Styles/register.css" 
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 export const Registration = () => {
 
     const initRequest= {
@@ -53,6 +54,7 @@ export const Registration = () => {
         "year": 1984,
         "TermNCondition": null
     }
+ const navigate=useNavigate()
 
     const [userDetails,setUserDetails]=useState(initRequest)
     const handleForm=(e)=>{
@@ -65,10 +67,13 @@ export const Registration = () => {
       try {
         let Registerres=await axios.post(process.env.REACT_APP_Registerapi,userDetails)
         console.log(Registerres)
+
+        navigate("/login")
+      setUserDetails(initRequest)
+// e.target.reset()
       } catch (error) {
         console.log(error)
       }
-      setUserDetails(initRequest)
 
     }
   return (
@@ -83,6 +88,8 @@ export const Registration = () => {
             </div>
             
             <input onChange={handleForm} type="text" placeholder='Title Mr/Ms/Mrs' name='Title' />
+            <input onChange={handleForm} type="text" placeholder='Login Name' maxLength={60} name='LoginName' />
+
             <input onChange={handleForm} type="text" placeholder='Name' maxLength={60} name='MemberName' />
             <input onChange={handleForm} type="text" placeholder='Father / Husband Title S/O, D/O, W/O' name='FatherTitle' />
             <input onChange={handleForm} type="text" placeholder='Father / Husband Name' maxLength={60} name='FatherName'/>
@@ -104,6 +111,13 @@ export const Registration = () => {
             <input onChange={handleForm} type="text" placeholder='Bank Account No' name='MemberBankACNo'/>
             <input onChange={handleForm} type="text" placeholder='Bank Account Type' name='MemberBankACType' />
             <input onChange={handleForm} type="text" placeholder='Bank IFSC Code' name='MemberBankIFSCCode'/>
+            <input onChange={handleForm} type="text" placeholder='Sponsor Id' maxLength={50} name='SponsorID' />
+            <input onChange={handleForm} type="text" placeholder='GroupID' maxLength={50}  name='GroupID'/>
+           
+            <input onChange={handleForm} type="password" placeholder='MemberCode' name='MemberCode' />
+            <input onChange={handleForm} type="password" placeholder='GroupCode' name='GroupCode' />
+            <input onChange={handleForm} type="text" placeholder='SponsorCode' maxLength={50} name='SponsorCode' />
+
             <input onChange={handleForm} type="text" placeholder='Nominee Name' maxLength={50} name='NomineeName' />
             <input onChange={handleForm} type="text" placeholder='Nominee Relation' maxLength={50}  name='NomineeRelation'/>
             <input onChange={handleForm} type="password" placeholder='password' name='LoginPwd' />
